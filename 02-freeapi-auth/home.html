@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <button onclick="logout()">Logout</button>
+</body>
+<script>
+    function logout(){
+        fetch('https://api.freeapi.app/api/v1/users/logout', {
+            method: 'POST',
+            headers: {
+                'accept': 'application/json'
+            }
+        })
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+                localStorage.removeItem("accessToken");
+                window.location.href = "login.html";
+            })
+            .catch(error => {
+                console.error(error);
+            });
+    }
+    let accessToken= localStorage.getItem("accessToken");
+    if(!accessToken){
+        window.location.href="login.html"
+    }
+    else{
+        fetch('https://api.freeapi.app/api/v1/users/current-user',{
+            method: 'GET',
+            headers: {
+                'accept': 'application/json',
+                'authorization': `Bearer ${accessToken}`
+            }
+        })
+        .then(res=>res.json())
+        .then(data=>{
+            console.log(data.data.username);
+            document.body.innerHTML+=`<h2>Welcome ${data.data.username} !! </h2>`
+            
+        })
+        .catch(error=>{
+            console.log(error);
+            localStorage.removeItem("accessToken");
+            window.location.href = "login.html";
+        })
+    }
+
+</script>
+</html>
