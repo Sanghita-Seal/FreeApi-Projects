@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 336" role="img" aria-label="New product">
+  <rect width="600" height="336" fill="#f8f8f6"/>
+  <ellipse cx="105" cy="294" rx="82" ry="14" fill="#d7d7d3"/>
+  <g transform="translate(35 45)">
+    <circle cx="75" cy="38" r="34" fill="#cfcfcb"/>
+    <path d="M41 88c5-27 61-27 68 0l12 73c4 23-17 35-28 17l-9-50-11 119H49l-5-119-21 49c-9 17-34 7-27-16z" fill="#d4d4cf"/>
+    <path d="M34 98c12 22 47 28 77 8l6 35c-27 27-78 17-95-12z" fill="#bfbfba" opacity=".75"/>
+    <rect x="89" y="92" width="37" height="86" rx="7" fill="#e9ece8"/>
+    <rect x="96" y="100" width="24" height="70" rx="4" fill="#c9ccc7"/>
+  </g>
+  <g transform="translate(140 94)">
+    <path d="M0 58c0-15 12-27 27-27h29c-5-6-8-14-8-22 0-20 16-36 36-36s36 16 36 36c0 8-3 16-8 22h91c-5-6-8-14-8-22 0-20 16-36 36-36s36 16 36 36c0 8-3 16-8 22h94c-5-6-8-14-8-22 0-20 16-36 36-36s36 16 36 36c0 8-3 16-8 22h25c15 0 27 12 27 27v24h19c19 0 34 15 34 34s-15 34-34 34h-19v24c0 15-12 27-27 27h-25c5 6 8 14 8 22 0 20-16 36-36 36s-36-16-36-36c0-8 3-16 8-22h-94c5 6 8 14 8 22 0 20-16 36-36 36s-36-16-36-36c0-8 3-16 8-22h-91c5 6 8 14 8 22 0 20-16 36-36 36s-36-16-36-36c0-8 3-16 8-22H27c-15 0-27-12-27-27v-24h-19c-19 0-34-15-34-34s15-34 34-34H0z" fill="#f53535"/>
+    <path d="M116 31v196M259 31v196M403 31v196" stroke="#d71f28" stroke-width="5" opacity=".58"/>
+    <path d="M30 58h417c12 0 22 10 22 22v31H-2V80c0-12 10-22 32-22z" fill="#ff4d4d" opacity=".45"/>
+    <text x="215" y="129" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="900" fill="#fff" letter-spacing="1">NEW PRODUCT</text>
+  </g>
+</svg>
