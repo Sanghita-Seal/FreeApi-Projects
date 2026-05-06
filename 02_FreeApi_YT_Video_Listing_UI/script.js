@@ -18,8 +18,8 @@ function applyTheme(theme) {
 
     themeToggle.innerText =
         theme === "light"
-            ? "🌙"
-            : "☀️";
+            ? "\u{1F319}"
+            : "\u2600\uFE0F";
 
     themeToggle.setAttribute(
         "aria-label",
@@ -155,7 +155,7 @@ function renderVideos(videos, shouldReplace = false) {
                     </p>
 
                     <p class="meta">
-                        ${views} views • ${published}
+                        ${views} views &bull; ${published}
                     </p>
 
                 </div>
