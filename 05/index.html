@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+
+    <meta
+        name="viewport"
+        content="
+            width=device-width,
+            initial-scale=1.0
+        "
+    />
+
+    <title>
+        Jokes Viewer
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    />
+
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <h1>
+            Laughing Corner 🤣🤣
+        </h1>
+
+        <button id="theme-btn">
+
+            Toggle Theme
+
+        </button>
+
+    </header>
+
+
+
+    <main id="jokes-container">
+
+    </main>
+
+
+
+    <div id="loader">
+
+        Loading jokes...
+
+    </div>
+
+
+
+    <!-- PAGINATION -->
+
+    <div class="pagination">
+
+        <button
+            id="prev-btn"
+            class="page-btn"
+        >
+
+            ❮
+
+        </button>
+
+
+
+        <div
+            id="pagination-numbers"
+            class="pagination-numbers"
+        >
+
+        </div>
+
+
+
+        <button
+            id="next-btn"
+            class="page-btn"
+        >
+
+            ❯
+
+        </button>
+
+    </div>
+
+
+
+    <p id="page-info">
+
+        Page 1 of 147
+
+    </p>
+
+
+
+    <!-- MODAL -->
+
+    <div id="modal" class="modal">
+
+        <div class="modal-content">
+
+            <button id="close-btn">
+
+                ✕
+
+            </button>
+
+            <p id="modal-joke">
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
